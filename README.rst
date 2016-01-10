@@ -3,8 +3,13 @@ SQR-005 Publication Board JIRA Project - User Note
 ##################################################
 
 This is a SQuaRE Technical Note describing the implementation of the
+LSST Publication Board process in JIRA.'
 
-View this technote at http://sqr-005.lsst.io
+You can likely view the latest published version at
+http://sqr-005.lsst.io or see a preview of the current version in
+`this repo`_
+
+.. _this repo: ./index.rst
 
 
 
