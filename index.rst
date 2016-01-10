@@ -36,13 +36,17 @@ With PubBoard
     Awaiting Action from the PubBoard (referee assignment, approval etc)
 With Reviewer
     The paper is with the reviewer assigned by the pub board
+With Author
+    The paper is with the author (eg. for edits)
 With Project
     The paper is in its project-wide consultation period
 
 Depending on the extent of comments received, a paper may transition
 several times between these statuses. For example it may bounce between
 the author and reviewer several times as comments are made and
-addressed. 
+addressed.
+
+
 
 Done Statuses - Pub Board
 -------------------------
@@ -90,6 +94,13 @@ Subsystem
     An LSST subsystem if one is clearly identified with this publication
 
 
+Swimlanes
+=========
+
+Swimlanes have been configured to display per assigne, and
+unassigned. This should help figure out if any particular reviewer is
+a bottleneck.
+	
 Links
 =====
 
