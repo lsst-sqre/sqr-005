@@ -19,6 +19,8 @@ Here is the Kanban board view of the statuses allowed by the workflow:
 .. image:: _static/kanban.png
    :alt: Kanban board listing status steps
 
+A definition of those steps follows. 
+
 Todo statuses
 -----------
 
@@ -91,14 +93,14 @@ Subsystem
 Links
 =====
 
-- `JIRA Pub Board project <https://>`_
+- `JIRA Pub Board project <https://jira.lsstcorp.org/secure/RapidBoard.jspa?rapidView=92&projectKey=PUB>`_
 
   The JIRA Project described in this note
   
-- `SQuaRE Technical Note <https://>`_
+- `SQuaRE Technical Note <http://sqr-005.readthedocs.org/en/latest/>`_
 
   Online version of this document
   
-- `SQuaRE Technical Note <https://>`_
+- `SQuaRE Technical Note <https://github.com/lsst-sqre/sqr-005>`_
 
   The source repository for this note. PR corrections/additions. 
