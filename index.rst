@@ -4,9 +4,9 @@ LSST Publication Board process in JIRA.
 Workflow
 ========
 
-The following workflow states are available. By request, the workflow
-is not constrained, i.e. one can transition from and to any state from
-any other state.
+The following workflow statuses are available. By request, the workflow
+is not constrained, i.e. one can transition from and to any status from
+any other status.
 
 Note that we use the words "paper" and "journal" for the thing that is
 submitted and its eventual publication destination, by convention and
@@ -14,13 +14,15 @@ because they are expected to dominate usage, but these are general
 terms for "artifact that is subject to the PubBoard" and "eventual
 publication outlet".
 
-New states
-----------
+Todo statuses
+-----------
+
+This is the status (aka New) that a newly created story has.
 
 Proposed
     A paper (or other artifact) has been submitted to the PubBoard
 
-In Progress states (PubBoard)
+In Progress statuses (PubBoard)
 -----------------------------
 
 With PubBoard
@@ -31,12 +33,12 @@ With Project
     The paper is in its project-wide consultation period
 
 Depending on the extent of comments received, a paper may transition
-several times between these states. For example it may bounce between
+several times between these statuses. For example it may bounce between
 the author and reviewer several times as comments are made and
 addressed. 
 
-Resolved States
----------------
+Done Statuses - Pub Board
+-------------------------
 
 Approved
     The paper has been approved by the PubBoard for publication
@@ -45,12 +47,12 @@ Rejected
     The paper has failed to clear the PubBoard process
 
 
-Resolved states (Journals)
+Done statuses (Journals)
 -----------------------------
 
-The following states can be used to track the paper after it has
+The following statuses can be used to track the paper after it has
 exited the PubBoard process if the author, LSST Communications or LSST
-subsystem cares to do so. However, they are non-actionable states by
+subsystem cares to do so. However, they are non-actionable statuses by
 the PubBoard and therefore JIRA treats them as resolved. 
 
 Journal Submitted
