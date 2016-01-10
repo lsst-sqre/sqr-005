@@ -14,6 +14,11 @@ because they are expected to dominate usage, but these are general
 terms for "artifact that is subject to the PubBoard" and "eventual
 publication outlet".
 
+Here is the Kanban board view of the statuses allowed by the workflow:
+
+.. image:: _static/kanban.png
+   :alt: Kanban board listing status steps
+
 Todo statuses
 -----------
 
