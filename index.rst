@@ -1,6 +1,13 @@
 This is a SQuaRE Technical Note describing the implementation of the
 LSST Publication Board process in JIRA.
 
+Policy
+======
+
+The governing policy is http://ls.st/LPM-162 - this document is only
+an implementation specification for the workflow of the publication
+board.
+
 Workflow
 ========
 
@@ -47,7 +54,6 @@ the author and reviewer several times as comments are made and
 addressed.
 
 
-
 Done Statuses - Pub Board
 -------------------------
 
@@ -73,8 +79,18 @@ Journal In Review
 Journal In Press
     The paper has been accepted and has a publication reference
 
-Fields
-======
+
+Issue Types
+===========
+
+The PubBoard has the following Issue Type:
+
+Paper
+    An artefact subject to PubBoard publication policy
+
+
+Custom Fields
+=============
 
 In general the reporter of the ticket is the person dealing with the
 PubBoard (typically the lead author) and the description field serves
@@ -100,7 +116,8 @@ Swimlanes
 Swimlanes have been configured to display per assigne, and
 unassigned. This should help figure out if any particular reviewer is
 a bottleneck.
-	
+
+
 Links
 =====
 
@@ -115,3 +132,4 @@ Links
 - `SQuaRE Technical Note <https://github.com/lsst-sqre/sqr-005>`_
 
   The source repository for this note. PR corrections/additions. 
+
