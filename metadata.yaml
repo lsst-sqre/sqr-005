@@ -19,13 +19,14 @@ doc_title: 'Publication Board JIRA Project - User Note'
 authors:
     - 'Frossie Economou'
     - 'Željko Ivezić'
+    - 'Tim Jenness'
 
 # Current document version
-last_revised: 'LSST Publication Board process in JIRA.2016-01-10'
+last_revised: 'LSST Publication Board process in JIRA.2016-04-05'
 
 # Version. Use Semvar, e.g., 1.0, including .dev, as necessary
 # This version string should correspond to the git tag when the document is published on Zenodo
-version: '1.0'
+version: '1.1'
 
 # Digital Object Identifier (DOI). Uncomment if available.
 # Keep this DOI updated as new releases are pushed to Zenodo
