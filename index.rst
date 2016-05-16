@@ -29,7 +29,7 @@ Here is the Kanban board view of the statuses allowed by the workflow:
 A definition of those steps follows.
 
 Todo statuses
------------
+-------------
 
 This is the status (aka New) that a newly created story has.
 
@@ -37,7 +37,7 @@ Proposed
     A paper (or other artifact) has been submitted to the PubBoard
 
 In Progress statuses (PubBoard)
------------------------------
+-------------------------------
 
 With PubBoard
     Awaiting Action from the PubBoard (referee assignment, approval etc)
@@ -65,7 +65,7 @@ Rejected
 
 
 Done statuses (Journals)
------------------------------
+------------------------
 
 The following statuses can be used to track the paper after it has
 exited the PubBoard process if the author, LSST Communications or LSST
@@ -161,10 +161,10 @@ Links
 
   The JIRA Project described in this note
 
-- `SQuaRE Technical Note <http://sqr-005.readthedocs.org/en/latest/>`_
+- `SQR-005: Publication Board JIRA Project - User Note <https://sqr-005.lsst.io>`_
 
   Online version of this document
 
-- `SQuaRE Technical Note <https://github.com/lsst-sqre/sqr-005>`_
+- `github.com/lsst-sqre/sqr-005 <https://github.com/lsst-sqre/sqr-005>`_
 
   The source repository for this note. PR corrections/additions.
