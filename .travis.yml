@@ -1,8 +1,21 @@
 sudo: false
 language: python
-python:
-      - 3.4
-install: "pip install -r requirements.txt"
-script: "make html"
-notifications:
-      email: false
+matrix:
+  include:
+    - python: "3.5"
+      env: LTD_MASON_BUILD=true
+install:
+  - pip install -r requirements.txt
+  - pip install "ltd-mason>=0.2,<0.3"
+script:
+  - sphinx-build -b html -a -n -W -d _build/doctree . _build/html
+after_success:
+  - ltd-mason-travis --html-dir _build/html
+env:
+  global:
+    - LTD_MASON_BUILD=false  # disable builds in regular text matrix
+    - LTD_MASON_PRODUCT="sqr-005"
+    # travis encrypt "LTD_MASON_AWS_ID=... LTD_MASON_AWS_SECRET=..." --add env.global 
+    - secure: "WSybMDMhAs4yHLUwQXST+/FTVdNoQeygBl1voZgJoKJceHJIQUr432nnwd7UZsqwK1RGDBIE8YnXJvzONYCz5vnk7HAEzYxTfgwAPY/ko9InlZwCgkvr/20YJ55LiMasFyZgc1T+BUva8n9xVlIpW3WyaBFq/ISdoLvQECGZzPO8tQ6Yx6oWfL/2Wwnhzvv31xFfY6rmRN56eGztAhEDZZg6T3I5rV6g3H7weok+JXZYQYdmjWfvs+UALTD88nOMsSOVuH5EyRm2BU0ZeX8S1M0vGytMIwCt2mOfltsW9WinHB1KxAFwhBR+j3n2fLQgHsvLH/cN5CF2Z+DBfnXy0W7Spa4UP4gBnBtn3CuxSOb1ieXgnQEuIHn3RcNYY1fhedBoitGgsqxXT9oyYBfvD405cYStvL1MBa3FrhuIJ0XiRavgId+25NGh2GNvhw0jZVBD5h+mjlw+6TwV5O/gW4N9OkmPPcck+1+Tbjdw5wjzp7wv3fMqSTd9X9PKyOAq+YOAZH+4mKJ8RTbZwhJKwLoQ+MiSG20/69GOfj3AQ9hIxxCoVo0heRozY6DEayINEx9JXOUaXac2CY8eNQ1Nvca+IpU02uFhJnYYbPwcxwvQ60/ZgtFQiC7uHTN1x5/vSjOFrw0Z8gFUWBYVPQTm1h389B0uMj3nnBgEzKrS82s="
+    # travis encrypt "LTD_KEEPER_URL=... LTD_KEEPER_USER=... LTD_KEEPER_PASSWORD=..." --add env.global 
+    - secure: "Y/0JJzbaRRkIiez2XMKEDklr00KS35CUcoQpaDaOcLorj77yTeJcgnx6Z7VCP1d3DzVfuXqbTICQIIGNQaDuaSy+nmS0CvwbWCmyeCfIC8n/Xnvj8hD9bhGTDFilS7mMwuYG0oEYGvAqFEcd85nEmgr5ZNcKZpcLYJ83wEUvZIWtNOf5ue3rPz4E8K/z2gwtxBhEUTHAIZ0al16Jbry/y33gBEdnSzDdYyIgqx6dHu2nc6pdim8Ot1VoNGjZ8HIr+KKbeB3F4CYmX6mXL9WGCjedCEqT6QOT1T1p/3vd8CSkuVFpyn0L+4sN1kJrtfEZz7NT/o1iJtoFSc2VNR68kCK9mt/ByZhpLY43gZG1IlMZi38k9YRqMDGj4ySf4O1C7psEIHfj5abgsnpMkTHvoR4lGtMHSN3X015YOLXXyqKoohggZnxdO4BFecr3inwIeIkhrpFzBs4dj9wLTDXfXpxwx8QnDRJihfdcwS8NHBpE0r5Tfvu7DZIkrvNmzq+Islt2Y+1R6lYE3b3a9nqSZBBqyzs0WyWXrZMsSb2p87F02duhctyEiY8FhUqpF3UgoRo2QaLe3/E250sJ6U19qx9gIYsBOffolpjoxJTHek9Mk0r5WeWPd2Wb3QaywjhI8LK/t9E6keA4ghh33dHMs1sQfwfs1dejNO69aN9e5Os="
