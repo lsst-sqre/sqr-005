@@ -22,7 +22,7 @@ authors:
     - 'Tim Jenness'
 
 # Current document version
-last_revised: 'LSST Publication Board process in JIRA.2016-04-05'
+last_revised: '2016-04-05'
 
 # Version. Use Semvar, e.g., 1.0, including .dev, as necessary
 # This version string should correspond to the git tag when the document is published on Zenodo
